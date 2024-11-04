@@ -2,36 +2,44 @@
 <html lang="en"> 
 <head> 
     <meta charset="UTF-8"> 
-    <title>Document</title>
+    <title>먹이사슬 피라미드</title>
     <style>
         div{
-            background-color: lightyellow;
-            width: 350px;
-            height: 200px; 
+            width: 250px;
+            height: 150px; 
             border: 3px solid #000000;
             margin: 20px;
-            /*padding: 30px*/
-
+            padding: 20px;
         }
-    </style> 
-</head> 
-<body> 
-    <div>DIV1
-        <h1>마진 테두리 패딩 연습</h1> 
-        <li>margin : 테두리 바깥쪽 여백</li> 
-        <li>padding : 내용과 테두리 사이의 영역</li> 
-        <li>border : 테두리 영역</li>
-    </div>  
-    <div style="background-color: lavender; border-style: dotted;">DIV2
+        #number{
+            position:fixed;
+            top:30px;
+            right:20px;
+            height:40px;
+        }
+    </style>
+</head>
+<body>
+    <div style="background-color: rgb(150, 155, 223); border-radius: 30px;">
+        <b>3차 소비자</b><br><br>
+        <img src="호랑이.jpeg" width="90px" style="float:left">
+        힘이 약한 육식/초식동물을 잡아먹는 육식돌물들이다. 매, 호랑이, 여우 등이 있다.
+       
     </div>
-    <div style="padding:5px; margin:20px; border-style:dashed;">DIV3<br> 
-        <h1>마진 테두리 패딩 연습</h1> 
-        <li>margin : 테두리 바깥쪽 여백</li> 
-        <li>padding : 내용과 테두리 사이의 영역</li> 
-        <li>border : 테두리 영역</li> 
-    </div> 
-    <div style="border-radius:50px; border-style: dashed;">DIV4<br> 
-        <h1>박스 테두리 연습</h1> 
+    <div style="background-color: rgb(154, 219, 245); border-radius: 30px;  position: relative; left:150px; ">
+        <b>2차 소비자</b><br><br>
+        <img src="올빼미.jpeg" width="90px" style="float:left">
+        초식동물을 먹고 사는 육식동물이다. 뱀, 올빼미, 새 등이 있다.
+    </div>    
+    <div style="background-color: rgb(174, 231, 174); border-radius: 30px; position: relative; left:300px;">
+        <b>1차 소비자</b><br><br>
+        <img src="다람쥐.jpeg" width="90px" style="float:left">
+        식물 또는 생산자를 먹고 사는 동물이다. 다람쥐, 나비, 토끼, 애벌레 등이 있다.
     </div>
-</body> 
-</html>
+    <div style="background-color: khaki; border-radius: 30px; position: relative; left:450px;">
+        <b>생산자</b><br><br>
+        <img src="풀.jpeg" width="90px" style="float:left">
+        먹이사슬의 가장 기초가 되는 생물이다.
+    </div>
+    <div id="number">202302995 황희선</div>
+</body>
